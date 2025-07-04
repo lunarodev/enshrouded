@@ -1,0 +1,13 @@
+services:
+  enshrouded:
+    image: sknnr/enshrouded-dedicated-server:latest
+    container_name: enshrouded-srv
+    restart: unless-stopped
+    ports:
+      - "15636:15636/udp"
+      - "15637:15637/udp"
+    volumes:
+      - ./data:/home/steam/enshrouded/savegame
+      - ./logs:/home/steam/Steam/logs
+      - ./config.json:/home/steam/enshrouded/enshrouded_server.json
+
