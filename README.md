@@ -13,7 +13,7 @@ Create `config.json` based on this template:
   "voiceChatMode": "Proximity",
   "enableVoiceChat": false,
   "enableTextChat": true,
-  "gameSettingsPreset": "Default",
+  "gameSettingsPreset": "Custom",
   "gameSettings": {
     "playerHealthFactor": 1,
     "playerManaFactor": 1,
